@@ -201,6 +201,78 @@ a.thumb:hover img { transform: scale(1.04); }
 
 .trio a:hover span { text-decoration: underline; }
 
+/* Person page */
+
+.crumb {
+  max-width: 880px;
+  margin: 0 auto;
+  padding: 20px 16px 0;
+  font-weight: 500;
+}
+
+.crumb a { text-decoration: none; }
+
+.crumb a:hover { text-decoration: underline; }
+
+.about.prose p + p { margin-top: 1em; }
+
+.reads {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px;
+}
+
+.reads li {
+  padding: 14px 18px;
+  background: var(--card);
+  border: var(--border);
+  border-radius: 10px;
+  box-shadow: 4px 4px 0 var(--accent);
+}
+
+.reads cite {
+  display: block;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.15rem;
+}
+
+.reads span { color: var(--muted); }
+
+.card.mini { display: block; }
+
+.card.mini .body { padding: 14px 22px; }
+
+.card.mini h3 { margin: 0; font-size: 1.2rem; }
+
+.card.mini p { margin-top: 2px; }
+
+.links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8px 20px;
+  margin: 16px 0 0;
+  font-weight: 500;
+}
+
+.links a { text-decoration-thickness: 2px; }
+
+.epigraph {
+  margin: 0 0 1em;
+  font-size: 1.35rem;
+  font-weight: 700;
+}
+
+.plain { margin: 0 0 1em; padding-left: 1.2em; }
+
+.plain li + li { margin-top: 6px; }
+
+.about .skills { color: var(--muted); }
+
 /* Footer */
 
 footer {
@@ -227,4 +299,6 @@ footer {
   }
 
   .trio { grid-template-columns: 1fr; }
+
+  .reads { grid-template-columns: 1fr; }
 }
