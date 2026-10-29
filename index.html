@@ -140,7 +140,23 @@
 
       </ol>
     </section>
+
+    <section class="about" aria-labelledby="contact-heading">
+      <h2 id="contact-heading">Contact</h2>
+      <p>Say hi: <span id="email">(enable JavaScript to see our email)</span></p>
+    </section>
   </main>
+
+  <script>
+    // Decode the address at runtime so it never appears in the HTML source.
+    (function () {
+      var addr = atob("dGVhbUAzcHhoLmNvbQ==");
+      var a = document.createElement("a");
+      a.href = "mailto:" + addr;
+      a.textContent = addr;
+      document.getElementById("email").replaceWith(a);
+    })();
+  </script>
 
   <footer>
     <p>&copy; 2013&ndash;2026 Three Pixel Heart</p>
